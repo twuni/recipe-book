@@ -11,5 +11,8 @@
     "email": "devin@canterberry.cc",
     "name": "Devin Canterberry"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -fR lib && cp -fR src lib"
+  }
 }
