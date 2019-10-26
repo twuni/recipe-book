@@ -1,0 +1,15 @@
+{
+  "name": "@twuni/recipe-book",
+  "version": "0.1.0",
+  "description": "An app for home cooks to view and manage recipes in the kitchen.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/twuni/recipe-book.git"
+  },
+  "author": {
+    "email": "devin@canterberry.cc",
+    "name": "Devin Canterberry"
+  },
+  "license": "MIT"
+}
