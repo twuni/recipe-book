@@ -13,6 +13,10 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "rm -fR lib && cp -fR src lib"
+    "build": "webpack --output lib/index.js"
+  },
+  "devDependencies": {
+    "webpack": "4.41.2",
+    "webpack-cli": "3.3.9"
   }
 }
