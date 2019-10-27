@@ -1,1 +1,3 @@
-console.log('Hello, world!');
+import mount from './mount';
+
+mount(document.createTextNode('Hello, world!'));
