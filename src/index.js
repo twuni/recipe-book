@@ -1,3 +1,3 @@
 import mount from './mount';
 
-mount(document.createTextNode('Hello, world!'));
+mount(document.createTextNode('Hello, world!'), document);
