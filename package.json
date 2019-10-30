@@ -15,7 +15,7 @@
   "scripts": {
     "build": "webpack --mode production --output lib/index.js",
     "lint": "eslint src",
-    "test": "mocha --require @babel/register src/**/spec.js"
+    "test": "nyc mocha --require @babel/register src/**/spec.js"
   },
   "devDependencies": {
     "@babel/core": "7.6.4",
@@ -27,6 +27,7 @@
     "eslint-plugin-import": "2.18.2",
     "jsdom": "15.2.0",
     "mocha": "6.2.2",
+    "nyc": "14.1.1",
     "webpack": "4.41.2",
     "webpack-cli": "3.3.9"
   }
