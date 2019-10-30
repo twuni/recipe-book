@@ -16,7 +16,7 @@
     "build": "webpack --mode production --output lib/index.js",
     "docs": "rm -fR docs; (cd src; find . -type f -name index.js | xargs jsdoc --destination ../docs --package ../package.json --readme ../README.md)",
     "lint": "eslint src",
-    "test": "nyc mocha --require @babel/register src/**/spec.js"
+    "test": "nyc --silent --check-coverage --lines 100 --statements 100 --functions 100 --branches 100 mocha --require @babel/register src/**/spec.js"
   },
   "devDependencies": {
     "@babel/core": "7.6.4",
