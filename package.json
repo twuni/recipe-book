@@ -14,6 +14,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --mode production --output lib/index.js",
+    "docs": "rm -fR docs; (cd src; find . -type f -name index.js | xargs jsdoc --destination ../docs --package ../package.json --readme ../README.md)",
     "lint": "eslint src",
     "test": "nyc mocha --require @babel/register src/**/spec.js"
   },
@@ -25,6 +26,7 @@
     "eslint": "6.6.0",
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
+    "jsdoc": "3.6.3",
     "jsdom": "15.2.0",
     "mocha": "6.2.2",
     "nyc": "14.1.1",
