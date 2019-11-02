@@ -31,6 +31,6 @@
     "mocha": "6.2.2",
     "nyc": "14.1.1",
     "webpack": "4.41.2",
-    "webpack-cli": "3.3.9"
+    "webpack-cli": "3.3.10"
   }
 }
