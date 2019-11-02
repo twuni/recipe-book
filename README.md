@@ -1,5 +1,7 @@
 # Recipe Book
 
+[![CircleCI][1]][2]
+
 An app for home cooks to find, view, and manage recipes from a
 touch-screen device mounted right in the kitchen.
 
@@ -31,3 +33,6 @@ re-evaluate choices whose value may have changed or diminished
 over time -- or to celebrate and share the results of choices that
 have yielded dividends and from which other teams may benefit
 by adopting.
+
+[1]: https://circleci.com/gh/twuni/recipe-book.svg?style=svg
+[2]: https://circleci.com/gh/twuni/recipe-book
