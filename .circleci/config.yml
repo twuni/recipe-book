@@ -1,0 +1,30 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+    - image: "twuni/nodejs:12.13.0"
+    steps:
+    - checkout
+    - restore_cache:
+        key: v1-{{ checksum ".tool-versions" }}-{{ checksum "yarn.lock" }}
+    - run:
+        name: "install dependencies"
+        command: "yarn --silent install --frozen-lockfile"
+    - save_cache:
+        key: v1-{{ checksum ".tool-versions" }}-{{ checksum "yarn.lock" }}
+        paths:
+        - node_modules
+    - run:
+        name: "build for production"
+        command: "yarn --silent build"
+        environment:
+          NODE_ENV: "production"
+    - run:
+        name: "perform static analysis for potential errors and code style"
+        command: "yarn --silent lint"
+    - run:
+        name: "run the test suite"
+        command: "yarn --silent test"
+    - run:
+        name: "generate documentation"
+        command: "yarn --silent docs"
