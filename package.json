@@ -27,7 +27,7 @@
     "eslint-config-airbnb-base": "14.0.0",
     "eslint-plugin-import": "2.18.2",
     "jsdoc": "3.6.3",
-    "jsdom": "15.2.0",
+    "jsdom": "16.5.0",
     "mocha": "6.2.2",
     "nyc": "14.1.1",
     "webpack": "4.41.2",
